@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import EtiquetaMain from './EtiquetaMain';
+import Image from 'next/image';
 
 interface PortfolioItemProps {
   title: string;
@@ -22,7 +23,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ title, description, image
   return (
     <div className="w-[310px] h-[474px] relative">
       <div className="w-[310px] h-[474px] left-0 top-0 absolute bg-white" />
-      <img className="w-[310px] h-[300px] left-0 top-0 absolute" src={imageUrl} alt={title} />
+      <Image className="w-[310px] h-[300px] left-0 top-0 absolute" src={imageUrl} alt={title} />
       <div className="left-[25px] top-[325px] absolute text-zinc-800 text-lg font-medium font-['Inter'] capitalize leading-snug">
         {title}
       </div>
