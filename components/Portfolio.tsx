@@ -23,7 +23,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ title, description, image
   return (
     <div className="w-[310px] h-[474px] relative">
       <div className="w-[310px] h-[474px] left-0 top-0 absolute bg-white" />
-      <Image className="w-[310px] h-[300px] left-0 top-0 absolute" src={imageUrl} alt={title} />
+      <Image className="w-[310px] h-[300px] left-0 top-0 absolute" src={imageUrl} alt={title} width={310} height={300}/>
       <div className="left-[25px] top-[325px] absolute text-zinc-800 text-lg font-medium font-['Inter'] capitalize leading-snug">
         {title}
       </div>
@@ -93,6 +93,7 @@ const Portfolio: React.FC = () => {
             description={item.description}
             imageUrl={item.imageUrl}
             dialogMessage={item.dialogMessage}
+            
           />
         ))}
       </div>

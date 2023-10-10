@@ -23,7 +23,14 @@ const Header = () => {
       <div className="w-[424px] h-[88px] left-[60px] top-[229px] absolute text-neutral-500 text-base font-normal font-['Inter'] leading-normal">
         From writing clean code to ensuring top-notch solutions, I thrive in backend web development. I'm enthusiastic about contributing my skills to drive seamless user experiences and innovative solutions.
       </div>
-      <Image className="w-[325.72px] h-[459.09px] left-[592px] top-[8px] absolute" src="https://media.licdn.com/dms/image/D4E03AQH9OLlY7HkdLg/profile-displayphoto-shrink_800_800/0/1681477984393?e=1702512000&v=beta&t=gxWPc9MHU-YicDsS3QBNQuYO8uJaqjyvkce8zTtddTQ" alt="Texto descriptivo"/>
+      <Image
+        className="w-[325.72px] h-[459.09px] left-[592px] top-[8px] absolute"
+        src="https://media.licdn.com/dms/image/D4E03AQH9OLlY7HkdLg/profile-displayphoto-shrink_800_800/0/1681477984393?e=1702512000&v=beta&t=gxWPc9MHU-YicDsS3QBNQuYO8uJaqjyvkce8zTtddTQ"
+        alt="Texto descriptivo"
+        width={325.72}
+        height={459.09}
+      />
+
       <div className="w-[154px] h-[51px] left-[60px] top-[328px] absolute">
         <button className="dialog-button" onClick={handleOpenDialog}>
           HIRE ME

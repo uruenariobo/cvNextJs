@@ -9,7 +9,7 @@ const ModelExtraSkill: React.FC<ModelExtraSkillProps> = ({ name }) => {
     
     <div className="w-[186px] h-6 left-0 flex items-center">
       <div className="left-0 ">
-        <Image src="/extraskill.svg" alt={name} />
+        <Image src="/extraskill.svg" alt={name} width={20} height={20} />
       </div>
       <div className="left-[30px] absolute text-neutral-500 text-[15px] font-normal font-['Inter'] capitalize leading-normal">
         {name}
